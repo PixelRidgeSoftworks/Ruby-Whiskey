@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+require 'spec_helper'
+
+RSpec.describe Whiskey::Core do
+  # Tests for whiskey-core functionality
+end
