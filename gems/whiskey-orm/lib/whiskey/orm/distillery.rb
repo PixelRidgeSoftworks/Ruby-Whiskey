@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Ruby Whiskey ORM - Distillery
 
 module Whiskey

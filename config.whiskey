@@ -1,0 +1,45 @@
+# Ruby Whiskey Framework Configuration
+# Whiskey-themed DSL - middle ground between natural language and code
+
+ORM barrel:
+    raise_on_error: yes
+    
+    ingredients:
+        validations: enabled
+        associations: enabled  
+        query: enabled
+        serialization: disabled
+        callbacks: enabled
+        persistence: enabled
+    
+    adapter: memory
+    max_connections: 10
+    timeout: 30
+
+Web barrel:
+    host: localhost
+    port: 3000
+    
+    middleware:
+        cors: enabled
+        compression: enabled
+    
+    routes:
+        default_format: json
+
+CLI barrel:
+    default_command: help
+    colors: on
+    verbose: off
+
+Framework:
+    log_level: info
+    environment: development
+    auto_boot: yes
+
+# Whiskey DSL supports:
+# - Sections as "barrel:" or "cask:"
+# - Boolean values: yes/no, on/off, enabled/disabled, true/false
+# - Nested configuration with indentation
+# - Comments with #
+# - Clean, readable syntax with whiskey metaphors

@@ -8,7 +8,7 @@ module Whiskey
       # Base Glass class - represents a data object that can be filled and drunk
       class Glass
         attr_reader :attributes, :filled_at, :drunk_at
-        
+
         def initialize(attributes = {})
           @attributes = {}
           @filled_at = nil
@@ -19,7 +19,7 @@ module Whiskey
         # Fill the glass with data (like loading from database or setting attributes)
         def fill(data)
           return self if data.nil? || data.empty?
-          
+
           @attributes.merge!(data)
           @filled_at = Time.now
           self
@@ -70,10 +70,12 @@ module Whiskey
 
         # String representation
         def to_s
-          state = case
-                  when drunk? then "drunk"
-                  when filled? then "filled"
-                  else "empty"
+          state = if drunk?
+                    'drunk'
+                  elsif filled?
+                    'filled'
+                  else
+                    'empty'
                   end
           "#<#{self.class.name} #{state} attributes=#{@attributes}>"
         end
@@ -82,7 +84,7 @@ module Whiskey
         # This is a basic implementation - enhanced by persistence module
         def drink
           return false unless filled?
-          
+
           # Basic drinking behavior - mark as drunk
           @drunk_at = Time.now
           true

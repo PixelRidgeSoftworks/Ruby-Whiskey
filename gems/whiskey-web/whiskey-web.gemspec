@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Web layer for Ruby Whiskey – routing & rendering'
   spec.description   = <<~DESC
-    Provides routing, controllers, and rendering for Ruby Whiskey applications. 
+    Provides routing, controllers, and rendering for Ruby Whiskey applications.#{' '}
     Fully modular and can be used independently of other Whiskey components.
   DESC
 

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Bartender CLI - Command-line tools for Ruby Whiskey'
   spec.description   = <<~DESC
-    The Bartender CLI provides command-line tools to scaffold applications, run servers, 
+    The Bartender CLI provides command-line tools to scaffold applications, run servers,#{' '}
     manage Vintages (migrations), and interact with the Whiskey ORM. Fully optional and modular.
   DESC
 

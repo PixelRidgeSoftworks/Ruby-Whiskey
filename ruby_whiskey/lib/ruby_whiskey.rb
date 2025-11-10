@@ -5,11 +5,9 @@
 require 'whiskey/core/version'
 require 'whiskey/core/config'
 require 'whiskey/core/logger'
+require 'whiskey/core/bootloader'
 
-require 'whiskey/orm/glass'
-require 'whiskey/orm/cask'
-require 'whiskey/orm/barrel'
-require 'whiskey/orm/distillery'
+require 'whiskey/orm'
 
 require 'whiskey/vintages/vintage'
 require 'whiskey/vintages/cellar'
@@ -21,7 +19,7 @@ require 'whiskey/cli/bartender'
 
 module RubyWhiskey
   VERSION = Whiskey::Core::VERSION
-  
+
   # Main entry point for Ruby Whiskey framework
   def self.version
     VERSION

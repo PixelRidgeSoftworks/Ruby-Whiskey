@@ -2,13 +2,14 @@
 
 module Whiskey
   module ORM
-    # Optional callbacks module for Glass objects
-    # Provides lifecycle hooks (before_fill, after_drink, around_drink, etc.)
-    module Callbacks
-      def self.included(base)
-        base.extend(ClassMethods)
-        base.include(InstanceMethods)
-      end
+    module Ingredients
+      # Optional callbacks ingredient for Glass objects
+      # Provides lifecycle hooks (before_fill, after_drink, around_drink)
+      module Callbacks
+        def self.included(base)
+          base.extend(ClassMethods)
+          base.include(InstanceMethods)
+        end
 
       module ClassMethods
         # Store callback definitions for this class

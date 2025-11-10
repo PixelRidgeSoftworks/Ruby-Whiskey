@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Glass & Cask ORM for Ruby Whiskey'
   spec.description   = <<~DESC
-    Provides the Whiskey ORM system: create Glass objects, fill them with SQL, manipulate them, 
-    and persist to the database using `drink`. Fully modular and flexible, with validations 
+    Provides the Whiskey ORM system: create Glass objects, fill them with SQL, manipulate them,#{' '}
+    and persist to the database using `drink`. Fully modular and flexible, with validations#{' '}
     and object transformations.
   DESC
 

@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Vintages depends on ORM
-  spec.add_dependency 'whiskey-orm', Whiskey::Core::VERSION
   spec.add_dependency 'whiskey-core', Whiskey::Core::VERSION
+  spec.add_dependency 'whiskey-orm', Whiskey::Core::VERSION
 
   spec.add_development_dependency 'rspec', '~> 3.0'
 end
